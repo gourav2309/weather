@@ -1,38 +1,328 @@
-.App {
-  text-align: center;
+.grid {
+  display: grid;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.grid-1-11 {
+  grid-template-columns: 1fr 11fr;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid-6-6 {
+  grid-template-columns: 6fr 6fr;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.grid-1-4-7 {
+  grid-template-columns: 1fr 4fr 7fr;
+}
+
+.border {
+  border: 1px solid;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.638);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.section {
+  background-color: rgba(0, 0, 0, 0.359);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.margin10 {
+  margin: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.height100 {
+  height: 100vh;
+}
+
+.height-full-parent {
+  height: 100%;
+}
+
+.font17 {
+  font-size: 17px;
+}
+
+.font25 {
+  font-size: 25px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.SideBar {
+  background-color: rgb(174, 172, 172);
+  height: 100vh;
+}
+
+.SideBar>div {
+  padding: 15px;
+  border-radius: 4px;
+  text-align: center;
+  margin: 10px;
+  background-color: rgb(207, 202, 202);
+  transition: 0.8s ease;
+}
+
+.navLinks:hover {
+  background-color: rgb(75, 64, 64);
+  color: white;
+}
+
+.active {
+  background-color: rgb(75, 64, 64) !important;
+  color: white;
+}
+
+.mainBackGround {
+  background-image: url('./images/weather3.webp');
+  background-size: 100% 100%;
+}
+
+/* card css starts */
+
+.cityWeatherCard {
+  padding: 20px;
+  border-radius: 4px;
+  width: 45%;
+  margin: 10px;
+  background-color: #413d3da1;
+  color: white;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+
+.cardHeader div {
+  padding: 10px;
+}
+
+.favIcon {
+  color: #f7f41e;
+  font-size: 25px;
+}
+
+.cardSection {
+  padding: 10px;
+}
+
+.white {
+  color: white;
+}
+
+.cardSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardTemp {
+  display: flex;
+  align-items: center;
+}
+
+.cardTemp>div {
+  padding: 10px;
+}
+
+.temp {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.cardSection2 {
+  padding: 10px;
+}
+
+.cardFooter {
+  padding: 10px;
+}
+
+.cloudIcon {
+  padding-top: 13px;
+}
+
+/* card css ends */
+
+/* home css starts here */
+
+.homeHeader {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.addCity {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #424141;
+  color: white;
+  border-radius: 4px;
+}
+
+.addCity span {
+  padding: 7px;
+}
+
+.homeTitle {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.addIcon {
+  font-size: 22px;
+}
+
+.homeSection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* home css ends here */
+
+/* input model css starts here */
+.inputModelBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* height: 100vh; */
+}
+
+.inputModelBox>div {
+  padding: 40px;
+  width: 400px;
+  background-color: #2b2626;
+  border-radius: 8px;
+  box-shadow: 7px 7px 10px #000000;
+}
+
+.ModelBoxinput {
+  padding: 10px;
+  font-size: 17px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.optionBox {
+  height: 300px;
+  overflow: auto;
+}
+
+.optionBox>div {
+  padding: 10px;
+  background-color: rgb(255 255 255 / 29%);
+  margin: 5px;
+  color: white;
+  transition: 0.6s ease;
+}
+
+.optionBox>div:hover {
+  background-color: white;
+  color: black;
+}
+
+/* input model css ends here  */
+
+.backGroundMuddy {
+  background-color: rgb(207, 202, 202);
+  transition: 0.8s ease;
+}
+
+.backGroundMuddy:hover {
+  background-color: rgb(75, 64, 64);
+  color: white;
+}
+
+.radius {
+  border-radius: 5px;
+}
+
+.overflow {
+  overflow: auto;
+  height: 650px;
+}
+
+.hover:hover {
+  font-size: 27px;
+  font-weight: 900;
+}
+
+.icon {
+  font-size: 25px;
+}
+
+.popover-template {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: #0000005e;
+  z-index: 1;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block;
+}
+
+.inputModelParent {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+}
+
+.font50 {
+  font-size: 50px;
+}
+
+.padding40 {
+  padding: 40px;
+}
+.padding20{
+  padding: 20px;
+}
+
+.forecast-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.mt-30{
+  margin-top: 30px;
 }
