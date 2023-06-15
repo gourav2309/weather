@@ -1,7 +1,7 @@
 {
   "name": "weather-v2",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://gourav2309.github.io/weather",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
